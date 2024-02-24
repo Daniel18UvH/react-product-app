@@ -1,0 +1,41 @@
+<%- include ("../templates/encabezado")%>
+<%- include ("../templates/menu")%>
+<div class="container mt-5">
+<form action="/log" method="post">
+    <div class="card">
+        <div class="card-header">
+            <h1>Login user</h1>
+        </div>
+        <div class="card-body">
+            <input class="form-control mb-3" type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+            <input class="form-control mb-3" type="text" name="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="card-footer">
+            <button class="form-control btn btn-primary" type="submit"> Login </button>
+            <a class="boton-redireccion" href="/nuevousuario">Registrarse</a>
+        </div>
+    </div>
+</form>
+</div>
+
+
+<style>
+
+
+    /* Estilos para el botón */
+    .boton-redireccion {
+        background-color: #0ebecb; /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        padding: 8px; /* Espaciado dentro del botón */
+        text-decoration: none; /* Quitar subrayado del enlace */
+        display: flex;
+        justify-content: center;
+        font-size: 16px; /* Tamaño de fuente */
+        cursor: pointer;
+        border: none;
+        border-radius: 5px; /* Bordes redondeados */
+        text-align: center;
+    }
+</style>
+
+<%- include ("../templates/pie")%>
